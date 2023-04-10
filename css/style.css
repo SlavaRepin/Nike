@@ -2352,6 +2352,12 @@ body {
   .top-footer__text {
     max-width: 24.5rem;
   }
+
+  .item-reviews__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 21.25rem;
+            flex: 0 1 21.25rem;
+  }
 }
 
 @media screen and (min-width: 47.99875em) {
