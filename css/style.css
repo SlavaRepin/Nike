@@ -222,6 +222,12 @@ h6 {
   opacity: 0.5;
 }
 
+.btn._focused {
+  outline: 0.125rem solid rgb(255, 255, 255);
+  -webkit-box-shadow: 0 0 0.625rem rgb(5, 17, 1);
+          box-shadow: 0 0 0.625rem rgb(5, 17, 1);
+}
+
 [class*=-ibg] {
   background-position: center;
   background-size: cover;
@@ -326,14 +332,14 @@ h6 {
           box-shadow: 0rem 0.3125rem 0.3125rem rgba(92, 190, 58, 0.5);
 }
 
-a .menu__link {
+.menu__link {
   -webkit-transition: color 0.5s ease 0s;
   -o-transition: color 0.5s ease 0s;
   transition: color 0.5s ease 0s;
 }
 
-a .menu__link:focus {
-  outline: 0.0625rem solid rgb(92, 190, 58);
+.menu__link._focused {
+  outline: 0.125rem solid rgb(92, 190, 58);
 }
 
 .videotube-modal-overlay {
@@ -704,6 +710,10 @@ a .menu__link:focus {
   transition: transform 0.5s ease 0s, color 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
+.bottom-footer__social-link._focused {
+  outline: 0.125rem solid rgb(92, 190, 58);
+}
+
 body {
   font-family: Raleway, sans-serif;
   font-weight: 500;
@@ -993,6 +1003,10 @@ body {
   -o-transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.body-walk__text p a._focused {
+  outline: 0.125rem solid rgb(92, 190, 58);
 }
 
 .body-walk__text:not(:last-child) {
@@ -1748,6 +1762,10 @@ body {
 .videos__link {
   position: absolute;
   inset: 0;
+}
+
+.videos__link._focused {
+  outline: 0.125rem solid rgb(92, 190, 58);
 }
 
 .videos__image-ibg {
