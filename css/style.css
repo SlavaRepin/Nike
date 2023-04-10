@@ -2143,11 +2143,11 @@ body {
   color: rgb(229, 242, 225);
 }
 
-.reviews__holder {
+.reviews__item {
   padding: 1.875rem 0.9375rem;
 }
 
-.reviews__holder._active .reviews__item {
+.reviews__item._active .item-reviews__wrap {
   opacity: 1;
   -webkit-transform: perspective(37.5rem) translate(0, 0) rotateX(0deg);
           transform: perspective(37.5rem) translate(0, 0) rotateX(0deg);
@@ -2156,23 +2156,6 @@ body {
   -o-transition: transform 0.7s ease 0.1s, opacity 0.7s ease 0.1s;
   transition: transform 0.7s ease 0.1s, opacity 0.7s ease 0.1s;
   transition: transform 0.7s ease 0.1s, opacity 0.7s ease 0.1s, -webkit-transform 0.7s ease 0.1s;
-}
-
-.reviews__item {
-  max-width: 37.5rem;
-  padding: 4.0625rem;
-  -webkit-box-shadow: -0.5rem 0.625rem 1.875rem rgba(0, 0, 0, 0.25);
-          box-shadow: -0.5rem 0.625rem 1.875rem rgba(0, 0, 0, 0.25);
-  margin: 0 auto;
-  background-color: rgb(255, 255, 255);
-  opacity: 0;
-  -webkit-transform: perspective(37.5rem) translate(0, -25%) rotateX(25deg);
-          transform: perspective(37.5rem) translate(0, -25%) rotateX(25deg);
-  -webkit-transition: opacity 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  transition: opacity 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  -o-transition: transform 0.5s ease 0s, opacity 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
 .reviews__control {
@@ -2213,6 +2196,23 @@ body {
           align-items: center;
 }
 
+.item-reviews__wrap {
+  max-width: 37.5rem;
+  padding: 4.0625rem;
+  -webkit-box-shadow: -0.5rem 0.625rem 1.875rem rgba(0, 0, 0, 0.25);
+          box-shadow: -0.5rem 0.625rem 1.875rem rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  -webkit-transform: perspective(37.5rem) translate(0, -25%) rotateX(25deg);
+          transform: perspective(37.5rem) translate(0, -25%) rotateX(25deg);
+  -webkit-transition: opacity 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s, opacity 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
 .item-reviews__title {
   font-weight: 700;
   font-size: 1.9375rem;
@@ -2235,6 +2235,11 @@ body {
 .item-reviews__avatar {
   width: 6.1875rem;
   height: 6.1875rem;
+}
+
+.item-reviews__avatar img {
+  width: 100%;
+  height: 100%;
 }
 
 .item-reviews__user-name {
@@ -2756,7 +2761,7 @@ body {
 }
 
 @media screen and (max-width: 68.125em) {
-  .reviews__item {
+  .item-reviews__wrap {
     padding: 0.9375rem;
     max-width: 30.625rem;
   }
@@ -2812,10 +2817,6 @@ body {
     font-size: 3.125rem;
   }
 
-  .reviews__item {
-    max-width: 33.75rem;
-  }
-
   .reviews__control {
     left: 50%;
     bottom: 0rem;
@@ -2823,6 +2824,10 @@ body {
         -ms-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     gap: 1.25rem;
+  }
+
+  .item-reviews__wrap {
+    max-width: 33.75rem;
   }
 }
 
@@ -2953,7 +2958,7 @@ body {
     margin: 0 -0.9375rem;
   }
 
-  .reviews__item {
+  .item-reviews__wrap {
     -webkit-box-shadow: 0rem 0rem 0.9375rem rgba(0, 0, 0, 0.25);
             box-shadow: 0rem 0rem 0.9375rem rgba(0, 0, 0, 0.25);
   }
